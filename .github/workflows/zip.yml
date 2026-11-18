@@ -1,0 +1,21 @@
+# Refait claude-cockpit.zip (release « dossier ») à chaque changement sur main
+name: zip
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  zip:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: git archive --format=zip --prefix=claude-cockpit/ -o claude-cockpit.zip HEAD
+      - run: |
+          gh release upload dossier claude-cockpit.zip --clobber \
+            || gh release create dossier claude-cockpit.zip --latest \
+                 --title "Le dossier à télécharger" \
+                 --notes "Décompressez claude-cockpit.zip, ouvrez le dossier dans Claude Code et tapez /cockpit."
+        env:
+          GH_TOKEN: ${{ github.token }}

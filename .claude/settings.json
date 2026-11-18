@@ -1,0 +1,31 @@
+{
+  "enabledMcpjsonServers": ["InProcess"],
+  "permissions": {
+    "allow": [
+      "mcp__InProcess__authenticate",
+      "mcp__InProcess__guide",
+      "mcp__InProcess__lire_skill",
+      "mcp__InProcess__mon_offre",
+      "mcp__InProcess__offres",
+      "mcp__InProcess__mes_cockpits",
+      "mcp__InProcess__nouveau_cockpit",
+      "mcp__InProcess__fichiers",
+      "mcp__InProcess__lire_fichier",
+      "mcp__InProcess__ecrire_fichier",
+      "mcp__InProcess__modifier_fichier",
+      "mcp__InProcess__commande",
+      "mcp__InProcess__regarder_ecran",
+      "mcp__InProcess__terminer",
+      "mcp__InProcess__lien_demo",
+      "mcp__InProcess__etat_en_ligne",
+      "mcp__InProcess__avant_publication",
+      "mcp__InProcess__equipe_organisation",
+      "mcp__InProcess__equipe_cockpit",
+      "mcp__InProcess__demandes_equipe",
+      "mcp__InProcess__mascotte",
+      "mcp__InProcess__versions",
+      "mcp__InProcess__vue_ensemble",
+      "mcp__InProcess__fonctionnement"
+    ]
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "InProcess": {
+      "type": "http",
+      "url": "https://studio.inprocess.ai/mcp"
+    }
+  }
+}

@@ -1,0 +1,4 @@
+# Le zip à télécharger ne garde que ce que Claude lit
+images/ export-ignore
+.github/ export-ignore
+.gitattributes export-ignore
